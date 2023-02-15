@@ -14,7 +14,7 @@ export const NameLink = styled(Link)`
   font-size: 48px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 18px;
 `;
 

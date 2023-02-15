@@ -1,11 +1,15 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
+export const Title = styled.h3`
+  font-size: 28px;
+  text-align: center;
+
+  margin-bottom: 16px;
+`;
+
 export const List = styled.ul`
-  display: grid;
-  max-width: calc(100vw - 48px);
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 16px;
-  margin: 0px auto;
+  display: flex;
 `;
 
 export const Item = styled.li`
@@ -19,15 +23,6 @@ export const Item = styled.li`
   border: 1px solid #eee;
 `;
 
-export const ImageWrapper = styled.div`
-  /* width: 420px; */
-  height: 560px;
-`;
-
-export const Title = styled.p`
-  font-size: 26px;
-
-  padding: 10px;
-
-  text-align: center;
+export const LinkInstagram = styled(Link)`
+  height: 300px;
 `;

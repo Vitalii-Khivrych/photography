@@ -2,7 +2,12 @@
 // import Image from 'next/image';
 // import { Inter } from '@next/font/google';
 
-import { Hero, HomePortfolio } from '@/components';
+import {
+  AboutMe,
+  Hero,
+  HomePortfolio,
+  InstagramGallerySection,
+} from '@/components';
 
 // const inter = Inter({ subsets: ['latin'] });
 
@@ -10,7 +15,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <AboutMe />
       <HomePortfolio />
+      <InstagramGallerySection />
 
       {/* <Head>
         <title>Create Next App</title>

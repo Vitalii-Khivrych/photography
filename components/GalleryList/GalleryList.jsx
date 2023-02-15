@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { List, Item, ImageWrapper, Title } from './GalleryList.styled';
 
 const data = [
   { id: 1, name: 'i and you', href: '/images/galleryList/1.jpg' },
@@ -9,21 +12,31 @@ const data = [
 
 export const GalleryList = () => {
   return (
-    <ul>
+    <List>
       {data.map(({ id, name, href }) => {
         return (
-          <li key={id}>
-            <Image
-              src={href}
-              alt={name}
-              width={300}
-              height={400}
-              object-fit="contain"
-            />
-            <h4>{name}</h4>
-          </li>
+          <Item key={id}>
+            <Link href="/#">
+              <ImageWrapper>
+                <Image
+                  src={href}
+                  alt={name}
+                  width={200}
+                  height={300}
+                  style={{
+                    objectFit: 'cover',
+                    width: '100% ',
+                    display: 'block',
+                    height: '100%',
+                  }}
+                />
+              </ImageWrapper>
+
+              <Title>{name}</Title>
+            </Link>
+          </Item>
         );
       })}
-    </ul>
+    </List>
   );
 };

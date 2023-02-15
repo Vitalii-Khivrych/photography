@@ -1,5 +1,13 @@
 import Image from 'next/image';
 
+import { Container, Section } from '@/components';
+import {
+  Title,
+  List,
+  Item,
+  LinkInstagram,
+} from './InstagramGallerySection.styled';
+
 const data = [
   { path: '/images/instagramGallery/IMG_9054.jpg' },
   { path: '/images/instagramGallery/IMG_9130.jpg' },
@@ -9,24 +17,32 @@ const data = [
 
 export const InstagramGallerySection = () => {
   return (
-    <section>
-      <h3>my work in instagram</h3>
-      <ul>
-        {data.map(({ path }) => (
-          <li key={path}>
-            <a href="#">
-              <Image
-                src={path}
-                alt="instagram photo"
-                width={250}
-                height={350}
-              />
-            </a>
-          </li>
-        ))}
-      </ul>
+    <Section>
+      <Container>
+        <Title>my work in instagram</Title>
+        <List>
+          {data.map(({ path }) => (
+            <Item key={path}>
+              <LinkInstagram href="#">
+                <Image
+                  src={path}
+                  alt="instagram photo"
+                  width={250}
+                  height={350}
+                  style={{
+                    objectFit: 'cover',
+                    width: '100% ',
+                    display: 'block',
+                    height: '100%',
+                  }}
+                />
+              </LinkInstagram>
+            </Item>
+          ))}
+        </List>
 
-      <a href="#">@marina</a>
-    </section>
+        <a href="#">@marina</a>
+      </Container>
+    </Section>
   );
 };
