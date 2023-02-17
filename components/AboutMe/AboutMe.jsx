@@ -10,36 +10,18 @@ import {
   Text,
   ImageWrapper,
 } from './AboutMe.styled';
-import myPhoto from '@/public/images/my-photo.jpg';
 
 export const AboutMe = () => {
   return (
-    <Section top="90px" bottom="90px">
+    <Section top="60px" bottom="60px">
       <Container>
         <Wrapper>
-          <Box>
-            <TextSection>About me</TextSection>
-            <Title>
-              Photographer in London <br />
-              <Name>Marina Khivrich</Name>
-            </Title>
-            <Text>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatum illo sit, adipisci illum quo delectus pariatur impedit
-              voluptas aliquam expedita soluta modi cupiditate laboriosam
-              nesciunt aliquid omnis atque officia, assumenda perferendis autem
-              aperiam. Doloribus neque asperiores ipsam nesciunt explicabo.
-              Aperiam, aliquid animi! Incidunt maiores quam, distinctio neque
-              nihil sit illum?
-            </Text>
-          </Box>
           <ImageWrapper>
             <Image
-              src={myPhoto}
+              src="/images/marina-about.jpg"
               alt="Photographer photo"
-              // fill
-              // width={200}
-              // height={300}
+              width={200}
+              height={200}
               style={{
                 objectFit: 'cover',
                 width: '100% ',
@@ -51,6 +33,26 @@ export const AboutMe = () => {
               // 33vw"
             />
           </ImageWrapper>
+          <Box>
+            <TextSection>About me</TextSection>
+            <Title>ABOUT | Marina Khivrich PHOTOGRAPHY</Title>
+            <Text>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatum illo sit, adipisci illum quo delectus pariatur impedit
+              voluptas aliquam expedita soluta modi cupiditate laboriosam
+              nesciunt aliquid omnis atque officia, assumenda perferendis autem
+              aperiam. Doloribus neque asperiores ipsam nesciunt explicabo.
+              Aperiam, aliquid animi! Incidunt maiores quam, distinctio neque
+              nihil sit illum?
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatum illo sit, adipisci illum quo delectus pariatur impedit
+              voluptas aliquam expedita soluta modi cupiditate laboriosam
+              nesciunt aliquid omnis atque officia, assumenda perferendis autem
+              aperiam.
+            </Text>
+          </Box>
         </Wrapper>
       </Container>
     </Section>

@@ -7,22 +7,32 @@ export const HeaderStyled = styled.header`
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  align-items: center;
+
   margin: 20px;
 `;
 
 export const NameLink = styled(Link)`
-  font-size: 48px;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
 `;
 
-export const Title = styled.h2`
-  font-size: 18px;
+export const Name = styled.span`
+  font-size: 20px;
+  text-transform: uppercase;
+
+  margin-right: 12px;
 `;
 
 export const NavList = styled.ul`
   display: flex;
   justify-content: center;
-
-  margin-left: 20px;
 `;
 
 export const NavItem = styled.li`
@@ -34,6 +44,9 @@ export const NavItem = styled.li`
 `;
 
 export const LinkStyled = styled(Link)`
+  font-size: 16px;
+  font-weight: 500;
+
   &.active {
     color: red;
   }

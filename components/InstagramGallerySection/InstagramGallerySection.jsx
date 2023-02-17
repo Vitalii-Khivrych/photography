@@ -6,6 +6,7 @@ import {
   List,
   Item,
   LinkInstagram,
+  AddressLink,
 } from './InstagramGallerySection.styled';
 
 const data = [
@@ -19,7 +20,7 @@ export const InstagramGallerySection = () => {
   return (
     <Section>
       <Container>
-        <Title>my work in instagram</Title>
+        <Title>My work in instagram</Title>
         <List>
           {data.map(({ path }) => (
             <Item key={path}>
@@ -41,7 +42,7 @@ export const InstagramGallerySection = () => {
           ))}
         </List>
 
-        <a href="#">@marina</a>
+        <AddressLink href="#">@marina</AddressLink>
       </Container>
     </Section>
   );

@@ -3,7 +3,7 @@
 // import { Inter } from '@next/font/google';
 
 import {
-  AboutMe,
+  AboutMeHome,
   Hero,
   HomePortfolio,
   InstagramGallerySection,
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <AboutMe />
+      <AboutMeHome />
       <HomePortfolio />
       <InstagramGallerySection />
 
