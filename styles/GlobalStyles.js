@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
 
     font-weight: 400;
     line-height: 1.5;
+
+    background-color: #7bf2da;
   }
 
   #__next {
@@ -71,4 +73,30 @@ export const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  @keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+
+  5% {
+    transform: scale(1.1);
+  }
+
+  39% {
+    transform: scale(0.85);
+  }
+
+  45% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
 `;

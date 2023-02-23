@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import { List, Item } from './PortfolioGallery.styled';
+import 'lightbox.js-react/dist/index.css';
+import { SlideshowLightbox } from 'lightbox.js-react';
 
-// export const getStaticProps = async () => {
-//   return { props: { id } };
-// };
+import { List, Item } from './PortfolioGallery.styled';
 
 export const PortfolioGallery = ({ id }) => {
   const data = [
@@ -22,15 +21,21 @@ export const PortfolioGallery = ({ id }) => {
   ];
 
   return (
-    <List>
-      {data.map(({ id, href }) => {
-        return (
+    <SlideshowLightbox
+      lightboxIdentifier="lightbox1"
+      framework="next"
+      data={data}
+    >
+      <List>
+        {data.map(({ id, href }) => (
           <Item key={id}>
             <Image
               src={href}
-              alt="image"
-              width={200}
-              height={300}
+              alt={href}
+              height={500}
+              width={500}
+              data-lightboxjs="lightbox1"
+              quality={80}
               style={{
                 objectFit: 'cover',
                 width: '100% ',
@@ -39,8 +44,29 @@ export const PortfolioGallery = ({ id }) => {
               }}
             />
           </Item>
-        );
-      })}
-    </List>
+        ))}
+      </List>
+    </SlideshowLightbox>
+
+    // <List>
+    //   {data.map(({ id, href }) => {
+    //     return (
+    //       <Item key={id} className="gallery">
+    //         <Image
+    //           src={href}
+    //           alt="image"
+    //           width={200}
+    //           height={300}
+    //           style={{
+    //             objectFit: 'cover',
+    //             width: '100% ',
+    //             display: 'block',
+    //             height: '100%',
+    //           }}
+    //         />
+    //       </Item>
+    //     );
+    //   })}
+    // </List>
   );
 };

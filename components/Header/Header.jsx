@@ -33,11 +33,10 @@ export const Header = () => {
               alt="Support Ukraine"
               width={32}
               height={28.5}
-              // unoptimized
               style={{
                 marginRight: '12px',
                 animation:
-                  'lds-heart 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) infinite',
+                  'lds-heart 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite',
               }}
             />
             Photography

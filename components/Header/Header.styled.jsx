@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const HeaderStyled = styled.header`
   text-align: center;
-  background-color: #a2c5c7;
+  background-color: #0abab5;
 `;
 
 export const Wrapper = styled.div`
@@ -25,7 +25,11 @@ export const NameLink = styled(Link)`
 
 export const Name = styled.span`
   font-size: 20px;
+  font-weight: bold;
   text-transform: uppercase;
+
+  color: #ffd700;
+  -webkit-text-stroke: 1px #ba5d0a;
 
   margin-right: 12px;
 `;
@@ -48,6 +52,6 @@ export const LinkStyled = styled(Link)`
   font-weight: 500;
 
   &.active {
-    color: red;
+    color: #ba0a0f;
   }
 `;

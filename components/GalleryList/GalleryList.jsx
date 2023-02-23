@@ -3,12 +3,7 @@ import Link from 'next/link';
 
 import { List, Item, ImageWrapper, Title } from './GalleryList.styled';
 
-const data = [
-  { id: 1, name: 'i and you', href: '/images/galleryList/1.jpg' },
-  { id: 2, name: 'architecture', href: '/images/galleryList/2.jpg' },
-  { id: 3, name: 'forest nikolaev', href: '/images/galleryList/3.jpg' },
-  { id: 4, name: 'our kids', href: '/images/galleryList/4.jpg' },
-];
+import { data } from '@/data/portfolioGalleryList';
 
 export const GalleryList = () => {
   return (
@@ -16,7 +11,7 @@ export const GalleryList = () => {
       {data.map(({ id, name, href }) => {
         return (
           <Item key={id}>
-            <Link href="/#">
+            <Link href={`/portfolio/${id}`}>
               <ImageWrapper>
                 <Image
                   src={href}

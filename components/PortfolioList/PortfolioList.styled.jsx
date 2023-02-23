@@ -10,14 +10,12 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  /* objectFit: 'cover',
-                width: '100% ',
-                display: 'block',
-                height: '100%', */
+  overflow: hidden;
+  background-color: #cdfcfb;
 
   box-shadow: 0 3px 25px -5px rgb(0 0 0 / 12%);
-  border-radius: 2px;
-  border: 1px solid #eee;
+  border-radius: 16px;
+  border: 3px solid #ffd700;
 `;
 
 export const ImageWrapper = styled.div`
@@ -25,7 +23,7 @@ export const ImageWrapper = styled.div`
   height: 560px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 26px;
 
   padding: 10px;
@@ -34,7 +32,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: 16px;
+  font-size: 20px;
 
   padding: 10px;
 `;
