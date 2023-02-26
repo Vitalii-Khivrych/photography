@@ -2,20 +2,22 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   html {
+    
+
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
 
   body {
     margin: 0;
-    font-family: 'Circe', 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+    font-family:   ${p => p.theme.fonts.text};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
     font-weight: 400;
     line-height: 1.5;
 
-    background-color: #7bf2da;
+    background-color: #e6fefd;
   }
 
   #__next {

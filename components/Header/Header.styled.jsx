@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const NameLink = styled(Link)`
+  font-family: ${p => p.theme.fonts.name};
   font-size: 18px;
 
   display: flex;
@@ -24,8 +25,9 @@ export const NameLink = styled(Link)`
 `;
 
 export const Name = styled.span`
+  font-family: ${p => p.theme.fonts.name};
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-transform: uppercase;
 
   color: #ffd700;
@@ -48,8 +50,11 @@ export const NavItem = styled.li`
 `;
 
 export const LinkStyled = styled(Link)`
+  /* font-family: ${p => p.theme.fonts.title}; */
+  font-weight: 700;
   font-size: 16px;
-  font-weight: 500;
+
+  text-transform: uppercase;
 
   &.active {
     color: #ba0a0f;

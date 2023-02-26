@@ -15,7 +15,7 @@ export const Item = styled.li`
 
   box-shadow: 0 3px 25px -5px rgb(0 0 0 / 12%);
   border-radius: 16px;
-  border: 3px solid #ffd700;
+  /* border: 3px solid #ffd700; */
 `;
 
 export const ImageWrapper = styled.div`

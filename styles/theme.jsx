@@ -1,3 +1,22 @@
+import { Courgette } from '@next/font/google';
+import { Raleway } from '@next/font/google';
+import { Dancing_Script } from '@next/font/google';
+
+const raleway = Raleway({
+  // weight: ['400', '500', '700'],
+  subsets: ['latin'],
+});
+
+const noto = Dancing_Script({
+  subsets: ['latin'],
+  // weight: '400',
+});
+
+const courgette = Courgette({
+  weight: '400',
+  subsets: ['latin'],
+});
+
 export const theme = Object.freeze({
   colors: {
     // accent: '#24CCA7',
@@ -25,8 +44,9 @@ export const theme = Object.freeze({
   },
 
   fonts: {
-    primary: 'Circe, sans-serif',
-    title: 'Poppins, sans-serif',
+    text: `${raleway.style.fontFamily},  sans-serif`,
+    title: `${noto.style.fontFamily},  sans-serif`,
+    name: `${courgette.style.fontFamily},  sans-serif`,
   },
 
   fontSizes: {
