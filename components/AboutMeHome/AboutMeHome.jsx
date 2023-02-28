@@ -10,7 +10,6 @@ import {
   Text,
   ImageWrapper,
 } from './AboutMeHome.styled';
-import myPhoto from '@/public/images/my-photo.jpg';
 
 export const AboutMeHome = () => {
   return (
@@ -35,7 +34,7 @@ export const AboutMeHome = () => {
           </Box>
           <ImageWrapper>
             <Image
-              src={myPhoto}
+              src="/images/my-photo.jpg"
               alt="Photographer photo"
               // fill
               // width={200}

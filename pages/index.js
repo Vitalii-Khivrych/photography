@@ -3,11 +3,11 @@
 // import { Inter } from '@next/font/google';
 
 import {
-  AboutMeHome,
-  Hero,
+  // AboutMeHome,
+  // Hero,
   HomeGallery,
-  HomePortfolio,
-  InstagramGallerySection,
+  // HomePortfolio,
+  // InstagramGallerySection,
 } from '@/components';
 
 // const inter = Inter({ subsets: ['latin'] });
