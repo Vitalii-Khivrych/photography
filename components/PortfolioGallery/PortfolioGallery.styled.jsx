@@ -15,6 +15,13 @@ export const Item = styled.li`
   overflow: hidden;
 
   box-shadow: 0 3px 25px -5px rgb(0 0 0 / 12%);
-  border-radius: 16px;
-  /* border: 3px solid #ffd700; */
+  border-radius: 4px;
+
+  transition-property: transform, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+
+  &:hover {
+    box-shadow: 0 6px 12px #141414;
+  }
 `;

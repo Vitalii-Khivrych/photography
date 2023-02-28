@@ -18,8 +18,10 @@ export const PortfolioList = () => {
                   alt={name}
                   width={200}
                   height={300}
+                  quality={100}
                   style={{
                     objectFit: 'cover',
+                    borderRadius: ' 4px 4px 0px 0px',
                     width: '100% ',
                     display: 'block',
                     height: '100%',
@@ -28,12 +30,12 @@ export const PortfolioList = () => {
               </ImageWrapper>
 
               <Title>{name}</Title>
-              <Text>
+              {/* <Text>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
                 incidunt eius dolor! Quasi, expedita modi nesciunt doloribus
                 incidunt, fuga, aliquam dolores minus aliquid harum quos
                 perferendis facilis optio ratione ullam.
-              </Text>
+              </Text> */}
             </Link>
           </Item>
         );

@@ -3,7 +3,7 @@ import { Container, PortfolioList, Section } from '@/components';
 const Portfolio = () => {
   return (
     <>
-      <Section top="70px" bottom="70px">
+      <Section top="20px" bottom="70px">
         <Container>
           <PortfolioList />
         </Container>

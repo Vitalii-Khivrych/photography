@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 const data = [
   { id: 1, text: 'Home', href: '/' },
-  { id: 2, text: 'About', href: '/about' },
+  // { id: 2, text: 'About', href: '/about' },
   { id: 3, text: 'Portfolio', href: '/portfolio' },
   // { id: 4, text: 'Contacts', href: '/contacts' },
 ];
@@ -36,7 +36,7 @@ export const Header = () => {
               style={{
                 marginRight: '12px',
                 animation:
-                  'lds-heart 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite',
+                  'lds-heart 1.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite',
               }}
             />
             Photography

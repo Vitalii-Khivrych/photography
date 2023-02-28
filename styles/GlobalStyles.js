@@ -16,8 +16,9 @@ export const GlobalStyle = createGlobalStyle`
 
     font-weight: 400;
     line-height: 1.5;
+    letter-spacing: 0.1em;
 
-    background-color: #e6fefd;
+    background-color: #f2f2f2;;
   }
 
   #__next {

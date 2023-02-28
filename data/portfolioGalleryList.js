@@ -1,6 +1,19 @@
 export const data = [
-  { id: 1, name: 'i and you', href: '/images/galleryList/1.jpg' },
-  { id: 2, name: 'architecture', href: '/images/galleryList/2.jpg' },
-  { id: 3, name: 'forest nikolaev', href: '/images/galleryList/3.jpg' },
-  { id: 4, name: 'our kids', href: '/images/galleryList/4.jpg' },
+  {
+    id: 'alexandra',
+    name: 'Alexandra',
+    href: '/images/galleries/alexandra/2.jpg',
+  },
+  { id: 'alisa', name: 'Alisa', href: '/images/galleries/alisa/0.jpg' },
+  { id: 'anna', name: 'Anna', href: '/images/galleries/anna/0.jpg' },
+  { id: 'avalon', name: 'Avalon', href: '/images/galleries/avalon/7.jpg' },
+  { id: 'eva', name: 'Eva', href: '/images/galleries/eva/0.jpg' },
+  { id: 'inguss', name: 'Inguss', href: '/images/galleries/inguss/9.jpg' },
+  {
+    id: 'lina-and-hulio',
+    name: 'Lina and Hulio',
+    href: '/images/galleries/lina-and-hulio/8.jpg',
+  },
+  { id: 'vere', name: 'Vere', href: '/images/galleries/vere/0.jpg' },
+  { id: 'vlada', name: 'Vlada', href: '/images/galleries/vlada/9.jpg' },
 ];

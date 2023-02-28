@@ -3,6 +3,7 @@ export * from './Footer/Footer';
 export * from './InstagramGallerySection/InstagramGallerySection';
 export * from './Hero/Hero';
 export * from './HomePortfolio/HomePortfolio';
+export * from './HomeGallery/HomeGallery';
 export * from './GalleryList/GalleryList';
 export * from './AboutMe/AboutMe';
 export * from './AboutMeHome/AboutMeHome';

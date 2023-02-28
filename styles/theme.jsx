@@ -1,6 +1,7 @@
 import { Courgette } from '@next/font/google';
 import { Raleway } from '@next/font/google';
 import { Dancing_Script } from '@next/font/google';
+import { Martel } from '@next/font/google';
 
 const raleway = Raleway({
   // weight: ['400', '500', '700'],
@@ -13,6 +14,10 @@ const noto = Dancing_Script({
 });
 
 const courgette = Courgette({
+  weight: '400',
+  subsets: ['latin'],
+});
+const martel = Martel({
   weight: '400',
   subsets: ['latin'],
 });
@@ -47,6 +52,7 @@ export const theme = Object.freeze({
     text: `${raleway.style.fontFamily},  sans-serif`,
     title: `${noto.style.fontFamily},  sans-serif`,
     name: `${courgette.style.fontFamily},  sans-serif`,
+    nav: `${martel.style.fontFamily},  sans-serif`,
   },
 
   fontSizes: {

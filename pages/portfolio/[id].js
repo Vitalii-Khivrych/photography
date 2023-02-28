@@ -2,6 +2,7 @@ import { Container, PortfolioGallery, Section } from '@/components';
 
 export const getServerSideProps = async context => {
   const { id } = context.params;
+
   return { props: { id: id } };
 };
 
