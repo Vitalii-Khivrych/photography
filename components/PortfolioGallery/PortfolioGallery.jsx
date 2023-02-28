@@ -10,7 +10,7 @@ export const PortfolioGallery = ({ id }) => {
     { id: 2, href: `/images/galleries/${id}/1.jpg` },
     { id: 3, href: `/images/galleries/${id}/2.jpg` },
     { id: 4, href: `/images/galleries/${id}/3.jpg` },
-    { id: 5, href: `/images/galleries/${id}/4.jpg ` },
+    { id: 5, href: `/images/galleries/${id}/4.jpg` },
     { id: 6, href: `/images/galleries/${id}/5.jpg` },
     { id: 7, href: `/images/galleries/${id}/6.jpg` },
     { id: 8, href: `/images/galleries/${id}/7.jpg` },
