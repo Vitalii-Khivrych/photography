@@ -9,6 +9,8 @@ export * from './AboutMe/AboutMe';
 export * from './AboutMeHome/AboutMeHome';
 export * from './PortfolioList/PortfolioList';
 export * from './PortfolioGallery/PortfolioGallery';
+export * from './SocialLinks/SocialLinks';
+export * from './FooterContacts/FooterContacts';
 
 export * from './shared/Layout';
 export * from './shared/Shared.styled';

@@ -1,14 +1,14 @@
 import { Courgette } from '@next/font/google';
-import { Raleway } from '@next/font/google';
+import { Montserrat } from '@next/font/google';
 import { Dancing_Script } from '@next/font/google';
 import { Martel } from '@next/font/google';
 
-const raleway = Raleway({
+const montserrat = Montserrat({
   // weight: ['400', '500', '700'],
   subsets: ['latin'],
 });
 
-const noto = Dancing_Script({
+const dancing = Dancing_Script({
   subsets: ['latin'],
   // weight: '400',
 });
@@ -24,6 +24,7 @@ const martel = Martel({
 
 export const theme = Object.freeze({
   colors: {
+    footerText: '#303030',
     // accent: '#24CCA7',
     // hover: '#1c997e',
     // name: '#075e98',
@@ -41,7 +42,7 @@ export const theme = Object.freeze({
     dark: '#000000',
 
     // background: 'rgb(231, 234, 242)',
-    // barBackground: '#ffff',
+    footerBackground: '#e4dfda',
     // homeBackground: 'rgba(255, 255, 255, 0.4)',
     // modalBackground: '#ffffff',
     // selectMenuBackground: 'rgba(255, 255, 255, 0.8)',
@@ -49,8 +50,8 @@ export const theme = Object.freeze({
   },
 
   fonts: {
-    text: `${raleway.style.fontFamily},  sans-serif`,
-    title: `${noto.style.fontFamily},  sans-serif`,
+    text: `${montserrat.style.fontFamily},  sans-serif`,
+    title: `${dancing.style.fontFamily},  sans-serif`,
     name: `${courgette.style.fontFamily},  sans-serif`,
     nav: `${martel.style.fontFamily},  sans-serif`,
   },

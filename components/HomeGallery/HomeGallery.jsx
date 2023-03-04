@@ -9,6 +9,7 @@ export const HomeGallery = () => {
         <Wrapper>
           <V_stretch>
             <Image
+              priority
               src="/images/galleryHome/0.jpg"
               alt="Gallery image"
               height={500}
@@ -24,6 +25,7 @@ export const HomeGallery = () => {
           </V_stretch>
           <V_stretch>
             <Image
+              priority
               src="/images/galleryHome/1.jpg"
               alt="Gallery image"
               height={500}
@@ -38,6 +40,7 @@ export const HomeGallery = () => {
           </V_stretch>
           <H_stretch>
             <Image
+              priority
               src="/images/galleryHome/2.jpg"
               alt="Gallery image"
               height={500}
@@ -53,6 +56,7 @@ export const HomeGallery = () => {
           </H_stretch>
           <V_stretch>
             <Image
+              priority
               src="/images/galleryHome/3.jpg"
               alt="Gallery image"
               height={500}
@@ -67,6 +71,7 @@ export const HomeGallery = () => {
           </V_stretch>
           <V_stretch>
             <Image
+              priority
               src="/images/galleryHome/4.jpg"
               alt="Gallery image"
               height={500}
@@ -81,6 +86,7 @@ export const HomeGallery = () => {
           </V_stretch>
           <H_stretch>
             <Image
+              priority
               src="/images/galleryHome/5.jpg"
               alt="Gallery image"
               height={500}
@@ -96,6 +102,7 @@ export const HomeGallery = () => {
           </H_stretch>
           <V_stretch>
             <Image
+              priority
               src="/images/galleryHome/6.jpg"
               alt="Gallery image"
               height={500}
@@ -110,6 +117,7 @@ export const HomeGallery = () => {
           </V_stretch>
           <H_stretch>
             <Image
+              priority
               src="/images/galleryHome/7.jpg"
               alt="Gallery image"
               height={500}
@@ -125,6 +133,7 @@ export const HomeGallery = () => {
           </H_stretch>
           <H_stretch>
             <Image
+              priority
               src="/images/galleryHome/8.jpg"
               alt="Gallery image"
               height={500}
@@ -603,6 +612,7 @@ export const HomeGallery = () => {
 
           <V_stretch>
             <Image
+              priority
               src="/images/galleryHome/41.jpg"
               alt="Gallery image"
               height={500}

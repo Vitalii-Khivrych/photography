@@ -1,12 +1,16 @@
-import { Container } from '@/components';
+import { Container, FooterContacts, SocialLinks } from '@/components';
 import { Name } from '../Header/Header.styled';
-import { FooterStyled } from './Footer.styled';
+import { FooterStyled, Wrapper, PhotographerName } from './Footer.styled';
 
 export const Footer = () => {
   return (
     <FooterStyled>
       <Container>
-        <Name>Marina Khivrich</Name>
+        <Wrapper>
+          <PhotographerName>Marina Khivrich</PhotographerName>
+          <SocialLinks />
+          <FooterContacts />
+        </Wrapper>
       </Container>
     </FooterStyled>
   );
