@@ -19,14 +19,14 @@ export const Container = styled.div`
   padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: ${p => p.theme.breakpoints.mobile}) {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     width: 768px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${p => p.theme.breakpoints.desk}) {
     width: 1280px;
   }
 `;

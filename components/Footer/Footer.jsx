@@ -7,7 +7,7 @@ export const Footer = () => {
     <FooterStyled>
       <Container>
         <Wrapper>
-          <PhotographerName>Marina Khivrich</PhotographerName>
+          <PhotographerName>Marina Khivrych</PhotographerName>
           <SocialLinks />
           <FooterContacts />
         </Wrapper>

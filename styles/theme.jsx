@@ -89,12 +89,12 @@ export const theme = Object.freeze({
   },
 
   breakpoints: {
-    mobile: '320px',
+    mobile: '480px',
     tablet: '768px',
     desk: '1280px',
   },
 
-  spacing: value => `${4 * value}px`,
+  // spacing: value => `${4 * value}px`,
 
   shadows: {
     line: '0px 1px 8px rgba(36, 204, 167, 0.5)',
