@@ -8,13 +8,7 @@ import {
   LinkInstagram,
   AddressLink,
 } from './InstagramGallerySection.styled';
-
-const data = [
-  { path: '/images/instagramGallery/IMG_9054.jpg' },
-  { path: '/images/instagramGallery/IMG_9130.jpg' },
-  { path: '/images/instagramGallery/IMG_9216.jpg' },
-  { path: '/images/instagramGallery/IMG_9254.jpg' },
-];
+import { instagramPhoto } from '@/data/instagramPhoto';
 
 export const InstagramGallerySection = () => {
   return (
@@ -22,9 +16,9 @@ export const InstagramGallerySection = () => {
       <Container>
         <Title>My work in instagram</Title>
         <List>
-          {data.map(({ path }) => (
+          {instagramPhoto.map(({ path }) => (
             <Item key={path}>
-              <LinkInstagram href="#">
+              <LinkInstagram href="'https://instagram.com/maradonna.311?igshid=YmMyMTA2M2Y='">
                 <Image
                   src={path}
                   alt="instagram photo"
@@ -42,7 +36,9 @@ export const InstagramGallerySection = () => {
           ))}
         </List>
 
-        <AddressLink href="#">@marina</AddressLink>
+        <AddressLink href="'https://instagram.com/maradonna.311?igshid=YmMyMTA2M2Y='">
+          @marina
+        </AddressLink>
       </Container>
     </Section>
   );
