@@ -1,8 +1,41 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding-top: ${P => P.top || '20px'};
-  padding-bottom: ${P => P.bottom || '20px'};
+  padding-top: ${p => p.top || '20px'};
+  padding-bottom: ${p => p.bottom || '20px'};
+`;
+
+export const WrapperAbsoluteElement = styled.div`
+  position: relative;
+`;
+
+export const GoBackLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  margin-top: 20px;
+
+  width: 120px;
+  height: 40px;
+
+  font-size: ${p => p.theme.fontSizes.m};
+  font-weight: 500;
+
+  background-color: #e4dfda;
+  border-radius: 6px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+
+  transition-property: transform, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+
+  &:hover {
+    box-shadow: 0 6px 12px #141414;
+  }
 `;
 
 export const HeroSection = styled(Section)`

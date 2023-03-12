@@ -1,4 +1,10 @@
-import { Container, PortfolioGallery, Section } from '@/components';
+import {
+  Container,
+  PortfolioGallery,
+  Section,
+  WrapperAbsoluteElement,
+  GoBackLink,
+} from '@/components';
 
 export const getServerSideProps = async context => {
   const { id } = context.params;
@@ -11,7 +17,10 @@ const Gallery = ({ id }) => {
     <>
       <Section top="40px" bottom="40px">
         <Container>
-          <PortfolioGallery id={id} />
+          <WrapperAbsoluteElement>
+            <PortfolioGallery id={id} />
+            <GoBackLink href={`/portfolio`}>Go back</GoBackLink>
+          </WrapperAbsoluteElement>
         </Container>
       </Section>
     </>

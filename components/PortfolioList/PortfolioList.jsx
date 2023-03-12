@@ -3,21 +3,21 @@ import Link from 'next/link';
 
 import { List, Item, ImageWrapper, Title, Text } from './PortfolioList.styled';
 
-import { data } from '@/data/portfolioGalleryList';
+import { data } from '@/data/galleries';
 
 export const PortfolioList = () => {
   return (
     <List>
-      {data.map(({ id, name, href }) => {
+      {data.map(({ id, name, smallImage }) => {
         return (
           <Item key={id}>
             <Link href={`/portfolio/${id}`}>
               <ImageWrapper>
                 <Image
-                  src={href}
+                  src={smallImage}
                   alt={name}
-                  width={200}
-                  height={300}
+                  width={400}
+                  height={500}
                   quality={100}
                   style={{
                     objectFit: 'cover',

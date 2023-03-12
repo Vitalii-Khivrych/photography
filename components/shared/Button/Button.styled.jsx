@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Btn = styled.button`
+  position: ${p => p.width || 'relative'};
+  /* position: absolute; */
+
   margin: 0 auto;
 
   display: flex;
