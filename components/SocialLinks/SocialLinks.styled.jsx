@@ -29,7 +29,8 @@ export const LinkStyled = styled(Link)`
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${p => p.theme.colors.footerText};
     color: ${p => p.theme.colors.footerBackground};
   }

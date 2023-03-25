@@ -31,7 +31,8 @@ const Item = styled.li`
   transition-duration: 0.25s;
   transition-timing-function: linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 12px #141414;
   }
 `;

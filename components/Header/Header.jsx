@@ -9,7 +9,7 @@ import {
   NavItem,
   LinkStyled,
 } from './Header.styled';
-import { Container } from '@/components';
+import { Container, OpenMobMenuBtn } from '@/components';
 import Image from 'next/image';
 
 const data = [
@@ -27,12 +27,12 @@ export const Header = () => {
       <Container>
         <Wrapper>
           <NameLink href="/" rel="noreferrer noopener">
-            <Name> Marina Khivrich</Name>
+            <Name> Marina Khivrych</Name>
             <Image
               src="/images/support-ukraine.png"
               alt="Support Ukraine"
               width={32}
-              height={28.5}
+              height={28}
               style={{
                 marginRight: '12px',
                 animation:
@@ -56,6 +56,7 @@ export const Header = () => {
             </NavList>
           </nav>
         </Wrapper>
+        <OpenMobMenuBtn />
       </Container>
     </HeaderStyled>
   );

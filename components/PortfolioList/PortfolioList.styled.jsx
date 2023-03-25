@@ -23,7 +23,8 @@ export const Item = styled.li`
   transition-duration: 0.25s;
   transition-timing-function: linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 10px 26px #141414;
   }
 `;

@@ -64,11 +64,12 @@ export const LinkStyled = styled(Link)`
   transition-duration: 250ms;
 
   &.active {
-    color: #e01a20;
+    color: ${p => p.theme.colors.active};
     font-weight: 700;
   }
 
-  &:hover {
-    color: #dc5e23;
+  &:hover,
+  &:focus {
+    color: ${p => p.theme.colors.accent};
   }
 `;

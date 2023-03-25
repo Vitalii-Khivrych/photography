@@ -25,7 +25,8 @@ const martel = Martel({
 export const theme = Object.freeze({
   colors: {
     footerText: '#303030',
-    // accent: '#24CCA7',
+    active: ' #e01a20',
+    accent: '#dc5e23',
     // hover: '#1c997e',
     // name: '#075e98',
     // placeholder: ' #BDBDBD',
