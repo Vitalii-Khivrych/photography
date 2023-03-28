@@ -8,7 +8,7 @@ export const List = styled.ul`
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
   margin: 0px auto;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 `;
 
 export const Item = styled.li`

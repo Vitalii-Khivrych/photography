@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const OpenBtn = styled.button`
-  margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +8,7 @@ export const OpenBtn = styled.button`
   width: ${p => p.width || '50px'};
   height: ${p => p.height || '50px'};
 
-  color: ${p => p.theme.colors.footerText};
+  color: ${p => (p.open ? p.theme.colors.footerText : 'white')};
   background: transparent;
 
   transition-property: background-color, color;
@@ -20,8 +18,11 @@ export const OpenBtn = styled.button`
   &:hover,
   &:focus {
     color: ${p => p.theme.colors.accent};
-    /* background-color: ${p => p.theme.colors.footerText};
-    color: ${p => p.theme.colors.footerBackground}; */
+  }
+
+  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
+    margin: 0 auto;
+    display: none;
   }
 `;
 

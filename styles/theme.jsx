@@ -44,7 +44,7 @@ export const theme = Object.freeze({
 
     // background: 'rgb(231, 234, 242)',
     footerBackground: '#e4dfda',
-    // homeBackground: 'rgba(255, 255, 255, 0.4)',
+    mobileMenuBackground: '#ababab;',
     // modalBackground: '#ffffff',
     // selectMenuBackground: 'rgba(255, 255, 255, 0.8)',
     // backdropBackground: 'rgba(0, 0, 0, 0.25)',

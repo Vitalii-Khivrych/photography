@@ -7,7 +7,7 @@ export const Section = styled.section`
 `;
 
 export const WrapperAbsoluteElement = styled.div`
-  position: relative;
+  /* position: relative; */
 `;
 
 export const GoBackLink = styled(Link)`

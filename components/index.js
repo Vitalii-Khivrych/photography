@@ -11,7 +11,8 @@ export * from './PortfolioList/PortfolioList';
 export * from './PortfolioGallery/PortfolioGallery';
 export * from './SocialLinks/SocialLinks';
 export * from './FooterContacts/FooterContacts';
-export * from './OpenMobMenuBtn/OpenMobMenuBtn';
+export * from './MobMenuBtn/MobMenuBtn';
+export * from './NavigationMenu/NavigationMenu';
 
 export * from './shared/Layout';
 export * from './shared/Shared.styled';

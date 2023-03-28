@@ -1,26 +1,37 @@
+import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import {
   HeaderStyled,
   Wrapper,
   NameLink,
   Name,
-  NavList,
-  NavItem,
-  LinkStyled,
+  MobileMenu,
+  MobileMenuBtnWrapper,
 } from './Header.styled';
-import { Container, OpenMobMenuBtn } from '@/components';
-import Image from 'next/image';
-
-const data = [
-  { id: 1, text: 'Home', href: '/' },
-  // { id: 2, text: 'About', href: '/about' },
-  { id: 3, text: 'Portfolio', href: '/portfolio' },
-  // { id: 4, text: 'Contacts', href: '/contacts' },
-];
+import { Container, NavigationMenu, MobMenuBtn } from '@/components';
 
 export const Header = () => {
+  const [isOpenMobMenu, setIsOpenMobMenu] = useState(false);
+
+  const { width } = useMediaQuery();
+  const breakpoint = 768;
+  const isMobile = width < breakpoint;
+
+  const openModal = () => {
+    setIsOpenMobMenu(true);
+  };
+  const closeModal = () => {
+    setIsOpenMobMenu(false);
+  };
+  // ----------------
   const router = useRouter();
+
+  useEffect(() => {
+    closeModal();
+  }, [router.pathname]);
 
   return (
     <HeaderStyled>
@@ -41,22 +52,23 @@ export const Header = () => {
             />
             Photography
           </NameLink>
-          <nav>
-            <NavList>
-              {data.map(({ id, text, href }) => (
-                <NavItem key={id}>
-                  <LinkStyled
-                    href={href}
-                    className={router.pathname === `${href}` ? 'active' : ''}
-                  >
-                    {text}
-                  </LinkStyled>
-                </NavItem>
-              ))}
-            </NavList>
-          </nav>
+
+          {isMobile ? (
+            !isOpenMobMenu ? (
+              <MobMenuBtn handlerClick={openModal} open />
+            ) : (
+              <MobileMenu>
+                <MobileMenuBtnWrapper>
+                  <MobMenuBtn handlerClick={closeModal} />
+                </MobileMenuBtnWrapper>
+
+                <NavigationMenu />
+              </MobileMenu>
+            )
+          ) : (
+            <NavigationMenu />
+          )}
         </Wrapper>
-        <OpenMobMenuBtn />
       </Container>
     </HeaderStyled>
   );
