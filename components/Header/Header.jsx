@@ -11,14 +11,32 @@ import {
   MobileMenu,
   MobileMenuBtnWrapper,
 } from './Header.styled';
-import { Container, NavigationMenu, MobMenuBtn } from '@/components';
+import {
+  Container,
+  NavigationMenu,
+  OpenMobMenuBtn,
+  CloseMobMenuBtn,
+} from '@/components';
+
+const breakpoint = 768;
 
 export const Header = () => {
   const [isOpenMobMenu, setIsOpenMobMenu] = useState(false);
-
+  const [isMobile, setIsMobile] = useState(false);
   const { width } = useMediaQuery();
-  const breakpoint = 768;
-  const isMobile = width < breakpoint;
+  const router = useRouter();
+
+  useEffect(() => {
+    if (+width < breakpoint) {
+      return setIsMobile(true);
+    }
+
+    setIsMobile(false);
+  }, [width]);
+
+  useEffect(() => {
+    closeModal();
+  }, [router.pathname]);
 
   const openModal = () => {
     setIsOpenMobMenu(true);
@@ -26,12 +44,6 @@ export const Header = () => {
   const closeModal = () => {
     setIsOpenMobMenu(false);
   };
-  // ----------------
-  const router = useRouter();
-
-  useEffect(() => {
-    closeModal();
-  }, [router.pathname]);
 
   return (
     <HeaderStyled>
@@ -55,11 +67,11 @@ export const Header = () => {
 
           {isMobile ? (
             !isOpenMobMenu ? (
-              <MobMenuBtn handlerClick={openModal} open />
+              <OpenMobMenuBtn handlerClick={openModal} />
             ) : (
               <MobileMenu>
                 <MobileMenuBtnWrapper>
-                  <MobMenuBtn handlerClick={closeModal} />
+                  <CloseMobMenuBtn handlerClick={closeModal} />
                 </MobileMenuBtnWrapper>
 
                 <NavigationMenu />
