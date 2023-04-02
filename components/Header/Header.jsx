@@ -10,6 +10,7 @@ import {
   Name,
   MobileMenu,
   MobileMenuBtnWrapper,
+  WrapperAfter,
 } from './Header.styled';
 import {
   Container,
@@ -70,11 +71,13 @@ export const Header = () => {
               <OpenMobMenuBtn handlerClick={openModal} />
             ) : (
               <MobileMenu>
-                <MobileMenuBtnWrapper>
-                  <CloseMobMenuBtn handlerClick={closeModal} />
-                </MobileMenuBtnWrapper>
+                <WrapperAfter>
+                  <MobileMenuBtnWrapper>
+                    <CloseMobMenuBtn handlerClick={closeModal} />
+                  </MobileMenuBtnWrapper>
 
-                <NavigationMenu />
+                  <NavigationMenu />
+                </WrapperAfter>
               </MobileMenu>
             )
           ) : (

@@ -4,6 +4,13 @@ import styled from 'styled-components';
 export const List = styled.ul`
   display: flex;
   justify-content: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
+    margin: 0;
+  }
 `;
 
 export const Item = styled.li`

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding-top: ${p => p.top || '20px'};
+  padding-top: ${p => p.top || '0px'};
   padding-bottom: ${p => p.bottom || '20px'};
 `;
 
@@ -48,7 +48,7 @@ export const HeroSection = styled(Section)`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  /* width: 100%; */
   padding: 0 15px;
   margin: 0 auto;
 

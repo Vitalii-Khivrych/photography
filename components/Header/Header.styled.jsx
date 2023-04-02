@@ -62,9 +62,13 @@ export const MobileMenu = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  padding: 20px 40px;
+
   transform: translateX(0);
   transition: transform 500ms, visibility 500ms ease-in-out;
+`;
+
+export const WrapperAfter = styled.div`
+  padding: 0 40px;
 `;
 
 // opacity: 0;

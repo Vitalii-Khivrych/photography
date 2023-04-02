@@ -40,6 +40,7 @@ export const NavItem = styled.li`
       display: none;
     }
   }
+
   @media screen and (min-width: ${p => p.theme.breakpoints.desk}) {
   }
 `;

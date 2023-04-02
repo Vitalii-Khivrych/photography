@@ -6,9 +6,14 @@ export const Wrapper = styled.div`
   background: #f2f2f2;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 150px;
   grid-auto-flow: dense;
+
+  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+  }
 `;
 
 export const V_stretch = styled.div`
