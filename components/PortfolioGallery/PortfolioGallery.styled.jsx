@@ -1,22 +1,19 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  /* display: grid;
-
-  max-width: calc(100vw - 48px);
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 32px;
-  margin: 0px auto;
-  padding: 40px 0; */
-
   padding: 10px;
   margin: 0 auto;
   background: #f2f2f2;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
   grid-auto-flow: dense;
+
+  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-auto-rows: 300px;
+  }
 `;
 
 const Item = styled.li`
