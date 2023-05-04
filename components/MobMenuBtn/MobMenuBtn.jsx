@@ -5,7 +5,7 @@ export const OpenMobMenuBtn = ({ handlerClick }) => {
   return (
     <OpenBtn type="button" onClick={() => handlerClick()} open>
       <Svg>
-        <use href={`${sprite}#icon-menu-open`}></use>
+        <use xlinkHref={`${sprite}#icon-menu-open`}></use>
       </Svg>
     </OpenBtn>
   );
@@ -15,7 +15,7 @@ export const CloseMobMenuBtn = ({ handlerClick }) => {
   return (
     <OpenBtn type="button" onClick={() => handlerClick()}>
       <Svg>
-        <use href={`${sprite}#icon-menu-close`}></use>
+        <use xlinkHref={`${sprite}#icon-menu-close`}></use>
       </Svg>
     </OpenBtn>
   );

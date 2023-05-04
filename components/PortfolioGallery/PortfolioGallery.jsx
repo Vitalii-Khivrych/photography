@@ -31,8 +31,8 @@ export const PortfolioGallery = ({ id }) => {
                     priority
                     src={href}
                     alt={href}
-                    height={800}
-                    width={1000}
+                    height={1000}
+                    width={1200}
                     data-lightboxjs="lightbox1"
                     quality={100}
                     style={{
@@ -50,7 +50,7 @@ export const PortfolioGallery = ({ id }) => {
                     src={href}
                     alt={href}
                     height={1200}
-                    width={1500}
+                    width={1000}
                     data-lightboxjs="lightbox1"
                     quality={100}
                     style={{

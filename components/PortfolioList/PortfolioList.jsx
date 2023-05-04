@@ -16,8 +16,8 @@ export const PortfolioList = () => {
                 <Image
                   src={smallImage}
                   alt={name}
-                  width={400}
-                  height={500}
+                  width={300}
+                  height={400}
                   quality={100}
                   style={{
                     objectFit: 'cover',

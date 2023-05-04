@@ -49,7 +49,7 @@ export const HeroSection = styled(Section)`
 
 export const Container = styled.div`
   /* width: 100%; */
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @media screen and (min-width: ${p => p.theme.breakpoints.mobile}) {

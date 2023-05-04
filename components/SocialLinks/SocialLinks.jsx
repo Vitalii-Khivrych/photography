@@ -10,7 +10,7 @@ export const SocialLinks = () => {
           <Item key={ind}>
             <LinkStyled href={href} rel="nofollow noopener" target="_blank">
               <Svg>
-                <use href={`${sprite}#${id}`}></use>
+                <use xlinkHref={`${sprite}#${id}`}></use>
               </Svg>
             </LinkStyled>
           </Item>
