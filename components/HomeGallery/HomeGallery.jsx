@@ -7,8 +7,8 @@ const VERTICAL_IMAGE_SIZE = {
   height: 500,
 };
 const HORIZONTAL_IMAGE_SIZE = {
-  width: 625,
-  height: 250,
+  width: 500,
+  height: 300,
 };
 
 export const HomeGallery = () => {

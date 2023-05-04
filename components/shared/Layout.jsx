@@ -8,8 +8,9 @@ export const Layout = ({ children }) => {
       <Head>
         <title>Marina Khivrych photography</title>
         <meta
+          http-equiv="Content-Type"
           name="description"
-          content="Website photography Marina Khivrych. These are her the best works. "
+          content="Website photography Marina Khivrych. These are her the best works."
         ></meta>
       </Head>
       <Header />
